@@ -1,16 +1,33 @@
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #fff8f0;
+  background-color: #f9f9f9;
   color: #333;
 }
 
 header {
-  background: #2c2c2c;
+  background-color: #111;
   color: white;
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 section {
@@ -28,32 +45,109 @@ section {
 
 .producto {
   width: 220px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 1rem;
+  border: 1px solid #ddd;
   border-radius: 10px;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
 }
 
+.producto:hover {
+  transform: translateY(-5px);
+}
 
 .producto img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
 }
 
+.producto h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
 
+.producto p {
+  margin: 0.25rem 0;
+}
+
+#contacto {
+  text-align: center;
+  padding: 2rem;
+  background-color: #eee;
+}
 
 footer {
-  background: #eee;
   text-align: center;
   padding: 1rem;
+  background-color: #111;
+  color: white;
 }
 
-h2 {
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.botones-redes {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
+
+.botones-redes a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp:hover {
+  background-color: #1ebe5a;
+}
+
+.instagram {
+  background-color:#111;
+  color: white;
+}
+
+.instagram:hover {
+  background-color: #c42b5e;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #fdd835;
+}
+
+.logo {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
